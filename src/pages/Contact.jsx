@@ -6,7 +6,7 @@ import {motion, useAnimation, useInView} from 'framer-motion'
 //icons
 import { SiGmail } from "react-icons/si";
 import { BsTelephoneFill } from "react-icons/bs";
-import { FaFacebook ,FaInstagram,FaLinkedin, FaTwitter, } from "react-icons/fa";
+import { FaFacebook ,FaInstagram,FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 
 import Icons from '../components/Icons';
 function Contact() {
@@ -34,7 +34,8 @@ function Contact() {
                         <a href='https://www.facebook.com/requiemzero09' target='_blank' ><FaFacebook /></a>,  
                         <a href='https://www.instagram.com/sternritter_ivan/' target='_blank'><FaInstagram /></a>, 
                         <a href='https://www.linkedin.com/in/ivan-macabontoc-0a0712295' target='_blank'><FaLinkedin /></a>, 
-                        <a href='https://www.twitter.com/Jushiro012623' target='_blank'><FaTwitter /></a>
+                        <a href='https://www.twitter.com/Jushiro012623' target='_blank'><FaTwitter /></a>,
+                        <a href='https://github.com/Jushiro012623' target='_blank'><FaGithub /></a>
                       ];
   return (
     <>
