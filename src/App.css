@@ -198,12 +198,15 @@
   font-size: 40px;
   color: #F7F8F9;
   padding: .1em;
-  background-color: var(--clr-rgba-light);
-  border-radius: 100%;
   z-index: 1; /* Ensure the button is on top of the image */
 }
 .exit-button svg{
+  background-color: var(--clr-rgba-light);
   display: flex;
+  height: 50px;
+  width: 50px;
+  padding: .1em;
+  border-radius: 100%;
   justify-content: center;
   align-items: center;
 }
