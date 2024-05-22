@@ -1,0 +1,425 @@
+
+@media only screen and (min-width: 550px) { /* obviously for screen with 550px above*/
+    .navbar{ /* Nav Bar*/
+        padding: 3em 4em 0 4em;
+        
+    }
+     /* Landing Page */
+    .landing .picture { /* landing picture*/
+        height: 350px;
+        width: 350px;
+    }
+    .landing .text-container  h1{ /* landing name */
+        font-size: 52px;
+    }
+    .landing .text-container  h3{ /* landing hello */
+        font-size: 30px;
+    }
+    .landing .text-container h2 span{ /* landing profession */
+        font-size: 35px;
+    }
+    .landing .cv-resume{ /* landing button cv */
+        font-size: 15px;
+    }
+
+    /*Service*/
+    .service-container .service-content{ /* servce box size */
+        width: 500px;
+    }
+    
+    .project-container .project-info{ /* port box main */
+        width: 510px;
+        height: 350px;
+    }
+    .project-container .project-info .project-image{ /* port  picture box*/
+        transform: translate(75%,15%) rotate(7deg);   
+        width: 350px;
+        height: 350px;
+  /* transform: translate(55%,1%) rotate(0deg);; */
+    }
+    .project-container .project-info:hover > .project-image{ /* port box hover image*/
+        transform: translate(70%,15%) rotate(4deg);
+    }
+    .project-container .project-info .project-text{/*port text box*/
+        /* margin: 1.5em 0 0 0em; */
+        align-items: start;
+        justify-content: start;
+        text-align: left;
+        margin-left: 1.5em;
+        padding-top: 3em;
+    }
+    .project-container .project-info .project-tools{/*port text box*/
+        left: 0;
+        bottom: 9%;
+    }
+    .project-container .project-info .project-text h2{ /* port text title*/
+        font-size: 15px;
+        line-height: 2;
+    }
+    .project-tools{
+        font-size: 28px;
+        margin-left: .7em;
+    }
+    .project-container .project-info .project-text h5{ /* port text info*/
+        font-size: 10px;
+        margin-top: 10px;
+        width: 30ch;
+        display: block;
+    }
+    
+    /* Expertise */
+    .expertise .skills-container{ /* expertise container */
+        gap:3em;
+    }
+    .skills-container .skills-content .skills-info{ /* expertise icons and percent */
+        width: 180px;
+        height: 180px;
+    }
+    .skills-container .skills-content .skills-info i{ /* expertise icons */
+        font-size: 3.6em;
+    }
+    .skills-container .skills-content .skills-info h4{ /* expertise percent */
+        font-size: 1.6em;
+    }
+
+    /* Educcation */
+    .education .education-container .education-content{ /* education contents */
+        width: 400px;
+    }
+
+    /* Contact */
+    .contact .contact-container{ /* contact container  */
+        gap: 6em;
+    }
+    .contact-container .contact-content a{ /* contact email and number */
+        font-size: var(--text-xs);
+    }
+    .contact .social-media{   /* contact social media*/
+        margin-top: 1.5em;
+        font-size: 35px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    /* Service */
+    .service .service-container{
+        gap: 3em;
+    }
+    .service-container .service-content{ /* service box size */
+        width: 380px;
+    }
+    /* Eductaion */
+    .education .education-container .education-content{ /* education contents */
+        width: 500px;
+    }
+
+    /* portfolio */
+
+    .project-container .project-info{ /* port box main */
+        width: 745px;
+        height: 410px;
+    }
+
+    .project-container .project-info .project-image{ /* port  picture box*/
+        width: 400px;
+        height: 400px;
+        transform: translate(95%,20%) rotate(7deg);;
+    }
+    .project-container .project-info:hover > .project-image{ /* port box hover image*/
+        transform: translate(90%,20%) rotate(4deg);;
+    }
+    .project-container .project-info .project-text h2{ /* port text title*/
+        font-size: 18px;
+    }
+    .project-tools{
+        font-size: 38px;
+        gap: .5em;
+        left: 5%;
+    }
+    .project-container .project-info .project-tools{ /* port  picture box*/
+        left: 5%;
+    }
+    .project-container .project-info .project-text{/*port text box*/
+        
+        left: 5%;
+        top: 10%; 
+    }
+    .project-container .project-info .project-text h5{ /* port text info*/
+      font-size: 12px;
+      width: 35ch;
+      line-height: 2.5;
+    }
+
+    .project-container .project-info:nth-child(2),
+    .project-container .project-info:nth-child(3){
+        width: 350px;
+        height: 350px;
+    }
+    .project-container .project-info:nth-child(2) .project-image,
+    .project-container .project-info:nth-child(3) .project-image{
+        transform: translate(20%, 32%) rotate(5deg);
+        height: 300px;
+        width: 300px;
+    }
+    .project-container .project-info:nth-child(2) .project-text,
+    .project-container .project-info:nth-child(3) .project-text{
+        /* margin: 1.5em 1em 0 1em; */
+        /* left: 0%;
+        top: 10%;  */
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        left: 0;
+    }
+    
+    .project-container .project-info:nth-child(2) .project-text h2,
+    .project-container .project-info:nth-child(3) .project-text h2{
+        /* width: 21ch; */
+        font-size: 15px;
+    }
+    .project-container .project-info:nth-child(2) .project-text h5,
+    .project-container .project-info:nth-child(3) .project-text h5{
+        width: 23ch;
+        font-size: 10px;
+        display: none;
+        line-height: 2;
+    }
+    .project-container .project-info:nth-child(2) .project-tools,
+    .project-container .project-info:nth-child(3) .project-tools{
+        gap: .3em ;
+        font-size: 25px;
+        margin: 0 0 0 .49em !important;
+        left: 0;
+    }
+    .project-container .project-info:nth-child(2):hover > .project-image,
+    .project-container .project-info:nth-child(3):hover > .project-image{
+        transform: translate(20%,32%) rotate(2deg);
+
+    }
+}   
+
+@media only screen and (min-width: 1024px) {
+    /* Nav */
+    .navbar{ /* nav body */
+        width: 1124px;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+    .navbar .burger{ /* nav icon burger */
+        display: none;
+    }
+    
+    .nav-links span{ /* nav links text */
+        display: block;
+    }
+    /* Nav bar */
+    .landing{ /* landing body */
+        margin-top: 0px;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 0;
+        height: 100vh;
+        padding-bottom: 50px;
+        gap: 4em;
+    }
+    .landing .picture{ /* landing picture */
+        order: 1;
+        height: 300px;
+        width: 300px;
+    }
+    .landing .text-container{ /* landing text container */
+        align-items: baseline;
+        width: 500px;
+        gap: .1em;
+    }
+    .landing .text-container h1{ /* landing name */
+        font-size: 70px; 
+    }
+    
+    .service .service-container{  /* service container */
+        gap:3rem;
+
+    }
+    .service-container .service-content{ /* service box */
+        width: 400px;
+        
+    }
+    .expertise .skills-container{ /* expertise body */
+        gap:2em;
+    }
+    .education .education-container .education-content{ /* education box  */
+        width: 600px;
+    }
+    .web{ /*nav links body*/
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: fixed;
+        top: 40px;
+        left: 0;
+        right: 0;
+        margin-left: auto; 
+        margin-right: auto; 
+        height: 50px;
+        border-radius: 50px;
+        z-index: 3;
+        width: 700px;
+        scroll-behavior: smooth;
+        backdrop-filter: blur(10px);
+        height: 60px;
+    }
+    .nav-links li a{ /* nav text and icons */
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .nav-links li a svg{ /* nav icons */
+        color: var(--clr-fsecond);
+    }
+    .nav-links li span::before{ /*nav links text underline animate*/
+        content: '';
+        position: absolute;
+        background-color: var(--clr-fsecond);
+        width: 0;
+        height: 2px;
+        bottom: -3px;
+        transition: .5s all;
+    }
+    .nav-links li span:hover::before{ /*navlinks text hover*/
+        width: 50%;
+    }
+    .container{ /* pages body */
+        --marginB:25vh;
+    }
+
+    .App{ /* 2nd body  */
+        width: 1024px;
+        margin: 0 auto;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .phone{ /* nav phone view */
+        display: none;
+    }
+
+    .iconsContainer{ /* icons */
+        color: var(--clr-fmain);
+    }
+    .dark-light{ /* nav light and dark toggler body box */
+        font-size: 20px;
+        border: 1px var(--clr-text) solid;
+        height: 35px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 0 1.5em 0 .2em ;
+      }
+      .dark-light div{ /* nav bar dark light icon circle */
+        border: 1px var(--clr-fsecond) solid;
+        transition: .7s ease-in-out;
+        border-radius: 50px;
+        color: var(--clr-fsecond);
+        display: flex;
+        justify-content: center;
+        padding: .1em;
+        transform: var(--light-to-dark);
+      }
+      .contact .contact-container { /* contact container */
+        padding: 1em 3em;
+        
+      }
+      .highlight {
+        background-color: yellow;
+      }
+      /* portfolio */
+
+    .project-container .project-info{ /* port box main */
+        width: 800px;
+        height: 450px;
+    }
+    .project-container .project-info .project-image{ /* port  picture box*/
+        width: 450px;
+        height: 450px;
+        transform: translate(85%,20%) rotate(7deg);;
+    }
+    .project-container .project-info .project-text{/*port text box*/
+        left: 5%;
+        top: 10%;
+    }
+    .project-container .project-info:hover > .project-image{ /* port box hover image*/
+        transform: translate(80%,20%) rotate(4deg);
+    }
+
+    .project-container .project-info .project-text h2{ /* port text title*/
+        font-size: 20px;
+    }
+    .project-tools{
+        font-size: 38px;
+        gap: .5em;
+        left: 5%;
+      }
+    .project-container .project-info .project-text h5{ /* port text info*/
+        font-size: 12px;
+        width: 35ch;
+    }
+    .project-container .project-info:nth-child(2),
+    .project-container .project-info:nth-child(3){
+        width: 375px;
+        height: 375px;
+    }
+    .project-container .project-info:nth-child(2) .project-image,
+    .project-container .project-info:nth-child(3) .project-image{
+        width: 325px;
+        height: 325px;
+        transform: translate(20%, 34%) rotate(5deg);
+
+    }
+    .project-container .project-info:nth-child(2) .project-text,
+    .project-container .project-info:nth-child(3) .project-text{
+        margin: 0 0 0 0;
+        left: 0%;
+        top: 10%; 
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .project-container .project-info:nth-child(2) .project-text h2,
+    .project-container .project-info:nth-child(3) .project-text h2{
+        /* width: 21ch;   */
+        font-size: 15px;
+
+    }
+    .project-container .project-info:nth-child(2) .project-text h5,
+    .project-container .project-info:nth-child(3) .project-text h5{
+        width: 23ch;
+        font-size: 10px;
+        display: none;
+        line-height: 2;
+    }
+    .project-container .project-info:nth-child(2) .project-tools,
+    .project-container .project-info:nth-child(3) .project-tools{
+        gap: .3em ;
+        font-size: 25px;
+        /* margin: 0 0 0 .49em !important; */
+        /* display: none; */
+        left: 5%;
+        bottom: 5%;
+    }
+    .project-container .project-info:nth-child(2):hover > .project-image,
+    .project-container .project-info:nth-child(3):hover > .project-image{
+        transform: translate(19%,34%) rotate(2deg);
+
+    }
+    /* .project-container .project-info:nth-child(2):hover > .project-tools,
+    .project-container .project-info:nth-child(3):hover > .project-tools{
+        gap: .4em ;
+        
+    } */
+}

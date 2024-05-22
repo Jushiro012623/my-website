@@ -1,0 +1,59 @@
+:root{
+
+    --clr-text:#454F59;
+    --clr-bg-light:#F7F8F9;
+    --clr-fmain: #22262B;
+    --clr-fsecond:  rgb(190,170,143);
+    --clr-bg-light-second:#DCDFE4;
+    --clr-rgba-light: rgba(36, 35, 35, .5);
+    --clr-rgba-second: rgb(190,170,143,.3);
+    --clr-rgba-black: rgba(255, 255, 255, .5);
+    /* dark mode variable */
+    --clr-text-dark:#B3B9C4;
+    --clr-rgba-light-dark:rgba(36, 35, 35, .5);
+    --clr-rgba-dark:rgba(255,255,255,.2);
+    --clr-bg-dark:#1D2125;
+    --clr-bg-dark-second: #2C333A;
+    --clr-fmain-dark: #F1F2F4;
+    --clr-fsecond-dark: rgb(208,188,255);
+    --clr-rgba-second-dark: rgba(208,188,255, .3);
+
+    /* text size variable */
+    --text-xxs: 12px;
+    --text-xs: 14px;
+    --text-sm: 18px;
+    --text-md: 20px;
+    --text-lg: 30px;
+    --text-xl: 35px;
+    --text-xl2: 40px;
+    --text-xl3: 50px;
+    --text-xl4: 60px;
+    --text-xl5: 70px;
+
+    /* text weight variable */
+    --w-title: 800;
+    --w-heading: 700;
+    --w-secondtitle: 600;
+    --w-info: 300;
+    --w-medium: 500;
+
+    /* margin variable */
+    --marginT:3rem;
+    --marginB:10rem;
+
+    /* light and dark toggler  */
+    --light-to-dark: translate(0%);
+    --dark-to-light: translate(100%);
+}
+
+.dark{ /* dark mode class  */
+    --clr-text: var(--clr-text-dark);
+    --clr-bg-light-second: var( --clr-bg-dark-second);
+    --clr-rgba-black: var(--clr-rgba-light-dark);
+    --clr-rgba-second: var(--clr-rgba-second-dark);
+    --clr-rgba-light: var(--clr-rgba-dark);
+    --light-to-dark: var(--dark-to-light);
+    --clr-bg-light: var(--clr-bg-dark);
+    --clr-fmain: var(--clr-fmain-dark);
+    --clr-fsecond: var(--clr-fsecond-dark);
+}
