@@ -68,7 +68,7 @@ function Portfolio() {
             }}
             initial='hidden'
             animate={isInView ? 'visible' : 'hidden'}
-            transition={{ duration: 1, delay: 0.75 * index }}
+            transition={{ duration: 1, delay: 0.50 * index }}
             onClick={() => handleProjectInfoClick(index)}
           >
             <div className='project-text'>
