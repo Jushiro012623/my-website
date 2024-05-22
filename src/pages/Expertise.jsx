@@ -5,7 +5,7 @@ import {motion, useAnimation, useInView} from 'framer-motion'
 
 //icons
 import { SiBlender, SiTailwindcss  } from "react-icons/si";
-import { DiJavascript, DiCss3 , DiPython, DiReact, DiPhotoshop, DiCode} from "react-icons/di";
+import { DiJavascript, DiCss3 , DiPython, DiGit , DiReact, DiPhotoshop, DiCode} from "react-icons/di";
 
 function Expertise() {
     const ref = useRef(null) //for wrapper 
@@ -27,10 +27,10 @@ function Expertise() {
                     { icons: <SiBlender />, title:'3D Rendering ' ,percent:'50%'},
                     { icons: <DiJavascript/>, title:'JavaScript',percent:'89%'},
                     { icons: <DiPython />, title:'Python',percent:'59%'},
-                    { icons: <DiReact/>, title: 'ReactJS',percent:'60%'},
-                    { icons: <DiPhotoshop/>, title:'Photoshop',percent:'90%'},
-                    { icons: <DiCode/>, title: 'Coding',percent:'70%'},
-                    { icons: <SiTailwindcss/>, title: 'Tailwind CSS',percent:'90%'},
+                    { icons: <DiReact/>, title: 'ReactJS',percent:'69%'},
+                    { icons: <DiPhotoshop/>, title:'Photoshop',percent:'98%'},
+                    { icons: <DiCode/>, title: 'Coding',percent:'75%'},
+                    { icons: <DiGit/>, title: 'Git',percent:'70%'},
                     { icons: <DiCss3/>, title: 'CSS',percent:'95%'},
                  ];
     return (
