@@ -16,6 +16,7 @@ import fsBms from '../images/fsBms.png';
 import fsTc from '../images/fsTc.png';
 import fsClinic from '../images/fsClinic.png';
 import fsUdmaps from '../images/UDMAPS.jpg';
+import shpzn from '../images/shpzone.jpg'
 
 function Portfolio() {
   // array of info
@@ -27,7 +28,7 @@ function Portfolio() {
   // array of image
   const images = [
     { img: tc, title: 'Thruimp Co. Shop', icons: ['ReactJs', 'NodeJs'], info: tcInfo, fscreenImg: fsTc  },
-    { img: bms, title: 'Barangay Management', icons: ['ReactJs', 'NextJs'], info: bmsInfo, fscreenImg: fsBms },
+    { img: shpzn, title: 'Deal-It', icons: ['HTML/CSS', 'Javascript', 'PHP/MySQL'], info: bmsInfo, fscreenImg: shpzn },
     { img: udm, title: 'UDMAPS AR NAVIGATION', icons: ['Unity', 'C Sharp', '3D Blender'], info: udInfo, fscreenImg: fsUdmaps },
     { img: clinic, title: 'UDM Clinic System', icons: ['HTML/CSS', 'Javascript', 'PHP/MySQL'], info: clInfo, fscreenImg: fsClinic },
     { img: bms, title: 'Barangay Management', icons: ['ReactJs', 'NextJs'], info: bmsInfo, fscreenImg: fsBms }
