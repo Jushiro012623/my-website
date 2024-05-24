@@ -16,7 +16,7 @@ import fsBms from '../images/fsBms.png';
 import fsTc from '../images/fsTc.png';
 import fsClinic from '../images/fsClinic.png';
 import fsUdmaps from '../images/UDMAPS.jpg';
-import shpzn from '../images/shpzone.jpg'
+import shpzn from '../images/shopzone.jpg'
 
 function Portfolio() {
   // array of info
