@@ -19,7 +19,7 @@ function NavLinks({navLinks}) {
     <>
       <ul className={`nav-links ${navLinks}`}>
         <li><Link smooth to='#home' scroll={scroll}><CiHome/> <span className='link-text'>Home</span></Link></li>
-        <li><Link smooth to='#portfolio' ><CiGrid42/> <span className='link-text'>Portfolio</span></Link></li>
+        <li><Link smooth to='#portfolio' scroll={scroll}><CiGrid42/> <span className='link-text'>Portfolio</span></Link></li>
         <li><Link smooth to='#education' scroll={scroll}><GoPerson/> <span className='link-text'>About me</span></Link></li>
         <li><Link smooth to='#contact' scroll={scroll}><CiMail/> <span className='link-text'>Contact</span></Link></li>
         <Dark />

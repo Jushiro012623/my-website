@@ -1,11 +1,7 @@
 import React, {useEffect, useRef} from 'react';
 
-//import icons
-import { SiCplusplus, SiCsharp, SiPython, SiJavascript, SiBlender, SiTailwindcss, SiDjango, SiAdobephotoshop, SiAdobeillustrator } from "react-icons/si";
-import { FaJava, FaHtml5, FaReact, FaCss3, FaFigma, FaBootstrap } from "react-icons/fa";
-
 import Icons from '../components/Icons';
-
+import {data} from '../Datas'
 //framer motion
 import {motion, useAnimation, useInView} from 'framer-motion'
 
@@ -23,27 +19,13 @@ function Service() {
         mainAnimation.start('visible')
       }
     }, [isInView])
-  
-    //array of icons
-    const programmingIcons = [<SiCplusplus />, <SiCsharp />, <SiPython />, <FaJava />];
-    const webDevelopingIcons = [<FaHtml5 />, <FaCss3 />, <SiJavascript />, <FaReact />];
-    const designingIcons = [<SiAdobephotoshop />, <SiAdobeillustrator />, <SiBlender />];
-    const uiux = [<FaFigma />]
 
-    //array of objects for ( title, text, icons )
-    const services =[
-        {title: 'Frontend Development', text: 'I work with HTML/CSS, React and Django for Development.', icons: webDevelopingIcons},
-        {title: 'Digital art / Graphic Designing', text: 'I use Adobe Photoshop, Illustrator and Blender for 3D rendering. ', icons: designingIcons},
-        {title: 'Web Design', text: "I use Figma to create intuitive and visually appealing digital experiences.", icons: uiux},
-        {title: 'Developer', text: "As a programmer, I develop efficient software solutions for various platforms and applications.", icons: programmingIcons},
-    ];
-    
   return (
     <>
     {/* <div className='container service' id='service'> */}
         <div className='service-container' ref={ref} >
             
-            {services.map((service, index) => (
+            {data.services.map((service, index) => (
                 
                     <motion.div className='service-content' key={index}
                         variants={{

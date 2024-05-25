@@ -1,12 +1,14 @@
 import React, {useEffect, useRef, useState} from 'react';
 
 //animation library
-import {motion, unInView, useAnimation, useInView} from 'framer-motion'
+import {motion, useAnimation, useInView} from 'framer-motion'
 import { CiSaveDown1  } from "react-icons/ci";
 //typewritter library
 import Typewriter from 'typewriter-effect';
-//images
+// //images
 import image from '../images/image.jpg';
+// import data from '../Data';
+import {data} from '../Datas'
 
 function Landing() {
   const ref = useRef(null) //for wrapper 
@@ -23,7 +25,6 @@ function Landing() {
       setTransitionRemove({ duration: .3, delay: 0 });
     }
   }, [isInView])
-
 
   const handleDownload = () => {
       // Open the downloaded PDF
@@ -67,7 +68,9 @@ function Landing() {
           animate={mainAnimation}
           transition={{duration:.5, delay:.25}}
         >
-          ivan <span className='lname'>martin</span>
+          {data.firstName} {/* FIrst Name */}
+          
+            <span className='lname'>{data.lastName}</span> {/* LAST Name */}
         </motion.h1>
         <motion.h2
           variants={{
@@ -79,14 +82,13 @@ function Landing() {
         >
           <Typewriter
             options={{
-              strings: ['GRAPHIC DESIGNER', 'PROGRAMMER', 'FRONTEND DEVELOPER', 'UI/UX DESIGNER'],
+              strings: data.profession,
               autoStart: true,
               loop: true,
             }}
           />  
         </motion.h2>
-        <motion.a 
-          className='cv-resume'
+        <motion.a className='cv-resume'
           value="download"
           variants={{
             hidden: { y: 200, opacity: 0},

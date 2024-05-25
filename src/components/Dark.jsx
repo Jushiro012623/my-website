@@ -1,41 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { HiMoon, HiMiniSun } from "react-icons/hi2";
 
-//icons
-import { HiMoon, HiMiniSun  } from "react-icons/hi2";
+function useDarkMode() {
+    const [darkMode, setDarkMode] = useState(() => {
+        const savedMode = localStorage.getItem('darkMode');
+        return savedMode ? JSON.parse(savedMode) : false;
+    });
 
+    useEffect(() => {
+        document.body.classList.toggle('dark', darkMode);
+        localStorage.setItem('darkMode', JSON.stringify(darkMode));
+    }, [darkMode]);
 
-function Dark() {
-
-    const [darkMode, setDarkMode] = useState(false);
-
-    
-    const makeItDarkMode = () => {//make it dark or light
-
-        setDarkMode(!darkMode); //dark is true
-
-        document.body.classList.toggle('dark'); //add dark mode class to body
-
-        if (!darkMode) { //if dark mode is true
-
-          setTimeout(() => { //this for transition only 
-            document.body.classList.toggle('smooth-transition');
-          }, 1000);
-        } 
-        else {
-          setTimeout(() => { //this for transition only 
-            document.body.classList.toggle('smooth-transition');
-          }, 1000);
-        }
-      };
-  
-  return (
-
-    <div onClick={makeItDarkMode} className='dark-light'>
-        <div>
-            {darkMode ? <HiMoon /> : <HiMiniSun />}
-        </div>
-    </div>
-  )
+    return [darkMode, setDarkMode];
 }
 
-export default Dark
+function Dark() {
+    const [darkMode, setDarkMode] = useDarkMode();
+
+    const makeItDarkMode = () => {
+        // Toggle dark mode
+        setDarkMode(!darkMode);
+    };
+
+    return (
+        <div onClick={makeItDarkMode} className='dark-light'>
+            <div>
+                {darkMode ? <HiMoon /> : <HiMiniSun />}
+            </div>
+        </div>
+    );
+}
+
+export default Dark;

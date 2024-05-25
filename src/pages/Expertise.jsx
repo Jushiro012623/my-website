@@ -3,6 +3,7 @@ import React, {useRef, useEffect} from 'react'
 //framer motion
 import {motion, useAnimation, useInView} from 'framer-motion'
 
+import {data} from '../Datas'
 //icons
 import { SiBlender, SiTailwindcss  } from "react-icons/si";
 import { DiJavascript, DiCss3 , DiPython, DiGit , DiReact, DiPhotoshop, DiCode} from "react-icons/di";
@@ -23,21 +24,21 @@ function Expertise() {
     }, [isInView])
   
     //array of objects icons, title and percent
-    const icon = [
-                    { icons: <SiBlender />, title:'3D Rendering ' ,percent:'50%'},
-                    { icons: <DiJavascript/>, title:'JavaScript',percent:'89%'},
-                    { icons: <DiPython />, title:'Python',percent:'59%'},
-                    { icons: <DiReact/>, title: 'ReactJS',percent:'69%'},
-                    { icons: <DiPhotoshop/>, title:'Photoshop',percent:'98%'},
-                    { icons: <DiCode/>, title: 'Coding',percent:'75%'},
-                    { icons: <DiGit/>, title: 'Git',percent:'70%'},
-                    { icons: <DiCss3/>, title: 'CSS',percent:'95%'},
-                 ];
+    // const icon = [
+    //                 { icons: <SiBlender />, title:'3D Rendering ' ,percent:'50%'},
+    //                 { icons: <DiJavascript/>, title:'JavaScript',percent:'89%'},
+    //                 { icons: <DiPython />, title:'Python',percent:'59%'},
+    //                 { icons: <DiReact/>, title: 'ReactJS',percent:'69%'},
+    //                 { icons: <DiPhotoshop/>, title:'Photoshop',percent:'98%'},
+    //                 { icons: <DiCode/>, title: 'Coding',percent:'75%'},
+    //                 { icons: <DiGit/>, title: 'Git',percent:'70%'},
+    //                 { icons: <DiCss3/>, title: 'CSS',percent:'95%'},
+    //              ];
     return (
         <>
     {/* <section className='container expertise' id='expertise'> */}
         <div ref={ref} className='skills-container'>
-            {icon.map((item, index) =>(
+            {data.icon.map((item, index) =>(
                 <motion.div key={index} className='skills-content'
                     variants={{
                         hidden: { y: 100, opacity: 0 },
