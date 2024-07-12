@@ -1,19 +1,19 @@
 //import icons
-import { SiCplusplus, SiCsharp, SiPython, SiJavascript, SiBlender, SiAdobephotoshop, SiAdobeillustrator, SiLaravel  } from "react-icons/si";
+import { SiCplusplus, SiCsharp, SiPython, SiJavascript, SiBlender, SiAdobephotoshop, SiAdobeillustrator, SiLaravel, SiMysql, SiPhp    } from "react-icons/si";
 import { FaJava, FaHtml5, FaReact, FaCss3, FaFigma } from "react-icons/fa";
 
 import { DiJavascript, DiCss3 , DiPython, DiGit , DiReact, DiPhotoshop, DiCode} from "react-icons/di";
 
 import { SiGmail } from "react-icons/si";
 import { BsTelephoneFill } from "react-icons/bs";
-import { FaFacebook ,FaInstagram,FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
+import { FaFacebook ,FaInstagram,FaLinkedin, FaTwitter, FaGithub, FaNodeJs } from "react-icons/fa";
 
 export const data = {
   // landing
     firstName: "ivan",
     lastName: "martin",
     myPicture: "image.jpg",
-    profession: ["GRAPHIC DESIGNER", "PROGRAMMER", "FRONTEND DEVELOPER", "UI/UX DESIGNER"],
+    profession: ["DIGITAL ARTIST", "PROGRAMMER", "FRONTEND DEVELOPER", "BACKEND DEVELOPER", "WEB DESIGNER", "GRAPHIC DESIGNER"],
 
     // education
     educationData:[
@@ -29,6 +29,10 @@ export const data = {
               title: "Bachelor of Science in Information Technology", 
               location: "Universidad De Manila" 
           },
+          {   year: "2018", 
+              title: "Computer System Servicing", 
+              location: "Tesda Quezon City" 
+          },
           {   year: "2017", 
               title: "Information & Communication Technology", 
               location: "Timoteo Paez Integrated School" 
@@ -37,7 +41,7 @@ export const data = {
     //services
     services:[
           {   title: 'Frontend Development', 
-              text: 'I work with HTML/CSS, React and Django for Development.', 
+              text: 'I work with HTML/CSS, Javascript/ReactJs for Frontend Development.', 
               icons: [<FaHtml5 />, <FaCss3 />, <SiJavascript />, <FaReact />],
           },
           {   title: 'Digital art / Graphic Designing', 
@@ -48,9 +52,10 @@ export const data = {
               text: "I use Figma to create intuitive and visually appealing digital experiences.", 
               icons: [<FaFigma />],
           },
-          {   title: 'Developer', 
+          {   title: 'Backend Developemend', 
               text: "As a programmer, I develop efficient software solutions for various platforms and applications.", 
-              icons: [<SiCplusplus />, <SiCsharp />, <SiPython />, <FaJava />]
+              text: "I have experience using PHP/Laravel, MySQL, NodeJs for Backend Development.", 
+              icons: [<SiPhp  />, <SiMysql  />, <SiLaravel />, <FaNodeJs  />]
           },
     ],
     //portfolio
@@ -64,21 +69,21 @@ export const data = {
         },
         {   
             img: require('./images/shopzone.jpg'), 
-            title: 'Deal-It', 
+            title: 'Deal-It Shop', 
             icons: ['HTML/CSS', 'Javascript', 'PHP/MySQL'], 
             info: "Barangay Management System is built for the barangay 107 residence and councils.",
             fscreenImg: require('./images/shopzone.jpg')  
         },
         {   
             img: require('./images/UDMAPS.png'), 
-            title: 'UDMAPS AR NAVIGATION', 
+            title: 'UDMAPS AR Navigation', 
             icons: ['Unity', 'C Sharp', '3D Blender'], 
             info: "UDMAPS is an AR Navigation system exclusively only for UDM vicinity.", 
             fscreenImg: require('./images/UDMAPS.jpg')
         },
         {   
             img: require('./images/clinic.png'), 
-            title: 'UDM Clinic System', 
+            title: 'UDM Clinic Management', 
             icons: ['HTML/CSS', 'Javascript', 'PHP/MySQL'], 
             info: "UDM Clinic System is built to track the patient's medical records.", 
             fscreenImg: require('./images/fsClinic.png')
@@ -101,7 +106,7 @@ export const data = {
         { icons: <DiPhotoshop/>, title:'Photoshop',percent:'98%'},
         { icons: <DiCode/>, title: 'Coding',percent:'75%'},
         { icons: <DiGit/>, title: 'Git',percent:'70%'},
-        { icons: <SiLaravel/>, title: 'Laravel/PHP',percent:'70%'},
+        { icons: <SiLaravel/>, title: 'Laravel',percent:'70%'},
      ],
      //Contact
 
