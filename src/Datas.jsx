@@ -17,6 +17,10 @@ export const data = {
 
     // education
     educationData:[
+          {   year: "2024", 
+              title: "Backend Developer", 
+              location: "Pisopay.com Inc" 
+          },
           {   year: "2023", 
               title: "IT Specialist", 
               location: "Department of Education - Manila" 
