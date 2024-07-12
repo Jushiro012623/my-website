@@ -1,5 +1,5 @@
 //import icons
-import { SiCplusplus, SiCsharp, SiPython, SiJavascript, SiBlender, SiAdobephotoshop, SiAdobeillustrator } from "react-icons/si";
+import { SiCplusplus, SiCsharp, SiPython, SiJavascript, SiBlender, SiAdobephotoshop, SiAdobeillustrator, SiLaravel  } from "react-icons/si";
 import { FaJava, FaHtml5, FaReact, FaCss3, FaFigma } from "react-icons/fa";
 
 import { DiJavascript, DiCss3 , DiPython, DiGit , DiReact, DiPhotoshop, DiCode} from "react-icons/di";
@@ -101,7 +101,7 @@ export const data = {
         { icons: <DiPhotoshop/>, title:'Photoshop',percent:'98%'},
         { icons: <DiCode/>, title: 'Coding',percent:'75%'},
         { icons: <DiGit/>, title: 'Git',percent:'70%'},
-        { icons: <DiCss3/>, title: 'CSS',percent:'95%'},
+        { icons: <SiLaravel/>, title: 'Laravel/PHP',percent:'70%'},
      ],
      //Contact
 
