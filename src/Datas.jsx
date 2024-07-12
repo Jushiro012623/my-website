@@ -52,7 +52,7 @@ export const data = {
               text: "I use Figma to create intuitive and visually appealing digital experiences.", 
               icons: [<FaFigma />],
           },
-          {   title: 'Backend Developemend', 
+          {   title: 'Backend Developement', 
               text: "As a programmer, I develop efficient software solutions for various platforms and applications.", 
               text: "I have experience using PHP/Laravel, MySQL, NodeJs for Backend Development.", 
               icons: [<SiPhp  />, <SiMysql  />, <SiLaravel />, <FaNodeJs  />]
