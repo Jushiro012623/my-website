@@ -35,7 +35,9 @@ function Home() {
   return (
     <>
       <Nav />
+      
       <Landing />
+      
       {sections.map((section, index) => (
         <Section key={index} section={section} />
       ))}

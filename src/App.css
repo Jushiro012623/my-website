@@ -20,6 +20,7 @@
   border-radius: 50px;
   z-index: 3;
 }
+
 .phone svg{ /* phone view nav icons */
   display: flex;
   align-items: center;
@@ -329,12 +330,17 @@
   bottom: 0;
   /* transform: translate(10%,10%) rotate(0deg); */
   transform: translate(20%,32%) rotate(5deg);
-  transition: transform .3s ease-in-out, box-shadow .6s ease-in-out;
+  transition: transform .3s ease-in-out, box-shadow .6s ease-in-out, filter .3s linear, opacity .4s ease;
   /* transform: scale(1.02); */
+  filter: grayscale(100);
+  opacity: .7;
 }
 
 .project-container .project-info:hover > .project-image{ /* port box hover image*/
   transform: translate(20%,32%) rotate(2deg);
+  
+  opacity: 1;
+  filter: grayscale(0);
   /* box-shadow: 1px 1px 10px 1px var(--clr-rgba-black); */
   /* transform: translate(50%,30%) rotate(5deg); */
 }
