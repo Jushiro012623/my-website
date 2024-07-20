@@ -8,11 +8,22 @@ import Education from './pages/Education'
 import Portfolio from './pages/Portfolio'
 import Expertise from './pages/Expertise'
 import Contact from './pages/Contact'
+import Lenis from 'lenis'
 
 // framer motion
 import { motion, useAnimation, useInView } from 'framer-motion'
 
 function Home() {
+  
+  useEffect( ()=>{
+    const lenis = new Lenis()
+
+    function raf(time){
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+    requestAnimationFrame(raf)
+  },[])
   const sections = [
     { sub: 'explore my', title: 'projects', content: <Portfolio />, class: ' portfolio', id: 'portfolio' },
     { sub: 'this is my', title: 'services', content: <Service />, class: ' service', id: 'service' },
