@@ -26,9 +26,9 @@ function Home() {
   },[])
   const sections = [
     { sub: 'explore my', title: 'projects', content: <Portfolio />, class: ' portfolio', id: 'portfolio' },
-    { sub: 'this is my', title: 'services', content: <Service />, class: ' service', id: 'service' },
-    { sub: 'see my', title: 'education & experience', content: <Education />, class: ' education', id: 'education' },
-    { sub: 'learn about my', title: 'expertise', content: <Expertise />, class: ' expertise', id: 'expertise' },
+    { sub: 'experience my', title: 'services', content: <Service />, class: ' service', id: 'service' },
+    { sub: 'learn about my', title: 'education & experience', content: <Education />, class: ' education', id: 'education' },
+    { sub: 'here is my', title: 'expertise', content: <Expertise />, class: ' expertise', id: 'expertise' },
     { sub: 'get in touch', title: 'contact', content: <Contact />, class: ' contact', id: 'contact' },
   ]
 
