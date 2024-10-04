@@ -13,7 +13,7 @@ export const data = {
     firstName: "ivan",
     lastName: "martin",
     myPicture: "image.jpg",
-    profession: ["DIGITAL ARTIST", "PROGRAMMER", "FRONTEND DEVELOPER", "BACKEND DEVELOPER", "WEB DESIGNER", "GRAPHIC DESIGNER"],
+    profession: ["FRONTEND DEVELOPER", "BACKEND DEVELOPER"],
 
     // education
     educationData:[
@@ -63,7 +63,7 @@ export const data = {
         {   
             img: require('./images/tc.png'), 
             title: 'Thruimp Co. Shop', 
-            icons: ['ReactJs', 'NodeJs'], 
+            icons: ["MERN Stack"], 
             info: "Truimp is your go-to thrift shop where you can find a wide range of thrifted products at unbeatable prices.", 
             fscreenImg: require('./images/fsTc.png' ) 
         },
@@ -91,7 +91,7 @@ export const data = {
         {   
             img: require('./images/bms.png'), 
             title: 'Barangay Management', 
-            icons: ['ReactJs', 'NextJs'], 
+            icons: ["MERN Stack], 
             info: "Barangay Management System is built for the barangay 107 residence and councils.", 
             fscreenImg:require('./images/fsBms.png' )
         }
@@ -99,14 +99,14 @@ export const data = {
 
       //Expertise
        icon:[
-        { icons: <SiBlender />, title:'3D Rendering ' ,percent:'50%'},
+        { icons: <SiBlender />, title:'3D Rendering ' ,percent:'60%'},
         { icons: <DiJavascript/>, title:'JavaScript',percent:'89%'},
-        { icons: <DiPython />, title:'Python',percent:'59%'},
-        { icons: <DiReact/>, title: 'ReactJS',percent:'69%'},
-        { icons: <DiPhotoshop/>, title:'Photoshop',percent:'98%'},
-        { icons: <DiCode/>, title: 'Coding',percent:'75%'},
-        { icons: <DiGit/>, title: 'Git',percent:'70%'},
-        { icons: <SiLaravel/>, title: 'Laravel',percent:'70%'},
+        { icons: <DiPython />, title:'Python',percent:'62%'},
+        { icons: <DiReact/>, title: 'ReactJS',percent:'79%'},
+        { icons: <DiPhotoshop/>, title:'Photoshop',percent:'95%'},
+        { icons: <DiCode/>, title: 'Coding',percent:'80%'},
+        { icons: <DiGit/>, title: 'Git',percent:'89%'},
+        { icons: <SiLaravel/>, title: 'Laravel',percent:'87%'},
      ],
      //Contact
 
