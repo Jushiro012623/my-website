@@ -91,7 +91,7 @@ export const data = {
         {   
             img: require('./images/bms.png'), 
             title: 'Barangay Management', 
-            icons: ["MERN Stack], 
+            icons: ["MERN Stack"], 
             info: "Barangay Management System is built for the barangay 107 residence and councils.", 
             fscreenImg:require('./images/fsBms.png' )
         }
