@@ -102,7 +102,7 @@ export const data = {
         { icons: <DiReact/>, title: 'ReactJS',percent:'79%'},
         { icons: <DiPhotoshop/>, title:'Photoshop',percent:'95%'},
         { icons: <DiCode/>, title: 'Coding',percent:'80%'},
-        { icons: <FaNodeJs/>, title: 'Git',percent:'89%'},
+        { icons: <SiExpress />, title: 'ExpressJS',percent:'80%'},
         { icons: <SiLaravel/>, title: 'Laravel',percent:'87%'},
      ],
      //Contact
