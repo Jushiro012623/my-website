@@ -53,7 +53,7 @@ export const data = {
           {   title: 'Backend Developement', 
               text: "As a programmer, I develop efficient software solutions for various platforms and applications.", 
               text: "I have experience using PHP/Laravel, MySQL, NodeJS/ExpressJS for Backend Development.", 
-              icons: [<SiPhp  />, <SiMysql  />, <SiLaravel />, <FaNodeJs  /> <SiExpress />]
+              icons: [<SiPhp  />, <SiMysql  />, <SiLaravel />, <FaNodeJs  />, <SiExpress />]
           },
     ],
     //portfolio
