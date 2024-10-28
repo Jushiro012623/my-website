@@ -1,9 +1,8 @@
 //import icons
-import { SiCplusplus, SiCsharp, SiPython, SiJavascript, SiBlender, SiAdobephotoshop, SiAdobeillustrator, SiLaravel, SiMysql, SiPhp,  SiGmail, SiExpress   } from "react-icons/si";
+import { SiCplusplus, SiCsharp, SiPython, SiJavascript, SiBlender, SiAdobephotoshop, SiAdobeillustrator, SiLaravel, SiMysql, SiPhp,  SiGmail, SiExpress, SiTailwindcss    } from "react-icons/si";
 import { FaJava, FaHtml5, FaReact, FaCss3, FaFigma, FaFacebook ,FaInstagram,FaLinkedin, FaTwitter, FaGithub, FaNodeJs  } from "react-icons/fa";
 
 import { DiJavascript, DiCss3 , DiPython, DiGit , DiReact, DiPhotoshop, DiCode} from "react-icons/di";
-import { RiTailwindCssFill } from "react-icons/ri";
 import { BsTelephoneFill } from "react-icons/bs";
 
 export const data = {
@@ -40,7 +39,7 @@ export const data = {
     services:[
           {   title: 'Frontend Development', 
               text: 'I work with HTML/CSS, Javascript, ReactJS, TailwindCSS for Frontend Development.', 
-              icons: [<FaHtml5 />, <FaCss3 />, <SiJavascript />, <FaReact />, <RiTailwindCssFill /> ],
+              icons: [<FaHtml5 />, <FaCss3 />, <SiJavascript />, <FaReact />, <SiTailwindcss  /> ],
           },
           {   title: 'Digital art / Graphic Designing', 
               text: 'I use Adobe Photoshop, Illustrator and Blender for 3D rendering. ', 
