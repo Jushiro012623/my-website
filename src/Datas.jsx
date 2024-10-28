@@ -1,12 +1,10 @@
 //import icons
-import { SiCplusplus, SiCsharp, SiPython, SiJavascript, SiBlender, SiAdobephotoshop, SiAdobeillustrator, SiLaravel, SiMysql, SiPhp    } from "react-icons/si";
-import { FaJava, FaHtml5, FaReact, FaCss3, FaFigma } from "react-icons/fa";
+import { SiCplusplus, SiCsharp, SiPython, SiJavascript, SiBlender, SiAdobephotoshop, SiAdobeillustrator, SiLaravel, SiMysql, SiPhp,  SiGmail, SiExpress   } from "react-icons/si";
+import { FaJava, FaHtml5, FaReact, FaCss3, FaFigma, FaFacebook ,FaInstagram,FaLinkedin, FaTwitter, FaGithub, FaNodeJs  } from "react-icons/fa";
 
 import { DiJavascript, DiCss3 , DiPython, DiGit , DiReact, DiPhotoshop, DiCode} from "react-icons/di";
-
-import { SiGmail } from "react-icons/si";
+import { RiTailwindCssFill } from "react-icons/ri";
 import { BsTelephoneFill } from "react-icons/bs";
-import { FaFacebook ,FaInstagram,FaLinkedin, FaTwitter, FaGithub, FaNodeJs } from "react-icons/fa";
 
 export const data = {
   // landing
@@ -41,8 +39,8 @@ export const data = {
     //services
     services:[
           {   title: 'Frontend Development', 
-              text: 'I work with HTML/CSS, Javascript/ReactJs for Frontend Development.', 
-              icons: [<FaHtml5 />, <FaCss3 />, <SiJavascript />, <FaReact />],
+              text: 'I work with HTML/CSS, Javascript, ReactJS, TailwindCSS for Frontend Development.', 
+              icons: [<FaHtml5 />, <FaCss3 />, <SiJavascript />, <FaReact />, <RiTailwindCssFill /> ],
           },
           {   title: 'Digital art / Graphic Designing', 
               text: 'I use Adobe Photoshop, Illustrator and Blender for 3D rendering. ', 
@@ -54,8 +52,8 @@ export const data = {
           },
           {   title: 'Backend Developement', 
               text: "As a programmer, I develop efficient software solutions for various platforms and applications.", 
-              text: "I have experience using PHP/Laravel, MySQL, NodeJs for Backend Development.", 
-              icons: [<SiPhp  />, <SiMysql  />, <SiLaravel />, <FaNodeJs  />]
+              text: "I have experience using PHP/Laravel, MySQL, NodeJS/ExpressJS for Backend Development.", 
+              icons: [<SiPhp  />, <SiMysql  />, <SiLaravel />, <FaNodeJs  /> <SiExpress />]
           },
     ],
     //portfolio
@@ -71,13 +69,13 @@ export const data = {
             img: require('./images/shopzone.jpg'), 
             title: 'Deal-It Shop', 
             icons: ['HTML/CSS', 'Javascript', 'PHP/MySQL'], 
-            info: "Barangay Management System is built for the barangay 107 residence and councils.",
+            info: "Deal-It is a shop where you can buy and sell items.",
             fscreenImg: require('./images/shopzone.jpg')  
         },
         {   
             img: require('./images/UDMAPS.png'), 
             title: 'UDMAPS AR Navigation', 
-            icons: ['Unity', 'C Sharp', '3D Blender'], 
+            icons: ['Unity', 'C Sharp', '3D Blender', 'Firebase'], 
             info: "UDMAPS is an AR Navigation system exclusively only for UDM vicinity.", 
             fscreenImg: require('./images/UDMAPS.jpg')
         },
@@ -105,7 +103,7 @@ export const data = {
         { icons: <DiReact/>, title: 'ReactJS',percent:'79%'},
         { icons: <DiPhotoshop/>, title:'Photoshop',percent:'95%'},
         { icons: <DiCode/>, title: 'Coding',percent:'80%'},
-        { icons: <DiGit/>, title: 'Git',percent:'89%'},
+        { icons: <FaNodeJs/>, title: 'Git',percent:'89%'},
         { icons: <SiLaravel/>, title: 'Laravel',percent:'87%'},
      ],
      //Contact
