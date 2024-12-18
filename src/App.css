@@ -374,7 +374,7 @@
   align-items: center;
   background-color: var(--clr-bg-light);
 }
-.project-link{
+#project-preview-link{
   position: absolute;
   top: 5%;
   right: .5%;
