@@ -60,44 +60,50 @@ export const data = {
         {   
             img: require('./images/zentrySS.png'), 
             title: 'Zentry', 
-            icons: ["ReactJS, TailwindCSS, GSAP"], 
+            icons: ["ReactJS", "TailwindCSS", "GSAP"], 
             info: "Zentry unites every player from countless games and platforms.", 
-            fscreenImg: require('./images/zentry.png' ) 
+            fscreenImg: require('./images/zentry.png' ),
+            link: "https://zentry-inky.vercel.app/"
         },
         {   
             img: require('./images/shopzone.jpg'), 
             title: 'Deal-It Shop', 
             icons: ['HTML/CSS', 'Javascript', 'PHP/MySQL'], 
             info: "Deal-It is a shop where you can buy and sell items.",
-            fscreenImg: require('./images/shopzone.jpg')  
+            fscreenImg: require('./images/shopzone.jpg'),
+            link: "#"
         },
         {   
             img: require('./images/UDMAPS.png'), 
             title: 'UDMAPS AR Navigation', 
             icons: ['Unity', 'C Sharp', '3D Blender', 'Firebase'], 
             info: "UDMAPS is an AR Navigation system exclusively only for UDM vicinity.", 
-            fscreenImg: require('./images/UDMAPS.jpg')
+            fscreenImg: require('./images/UDMAPS.jpg'),
+            link: "https://drive.google.com/drive/folders/1FCb0pzqOHMw5LsKuaIywVHWXvsM4zlhF?usp=sharing"
         },
         {   
             img: require('./images/tc.png'), 
             title: 'Thruimp Co. Shop', 
-            icons: ["MERN Stack"], 
+            icons: ["ReactJS", 'ExpressJS', "MySQL"], 
             info: "Truimp is your go-to thrift shop where you can find a wide range of thrifted products at unbeatable prices.", 
-            fscreenImg: require('./images/fsTc.png' ) 
+            fscreenImg: require('./images/fsTc.png' ),
+            link: "https://github.com/Jushiro012623/triump-co/"
         },
         {   
             img: require('./images/clinic.png'), 
             title: 'UDM Clinic Management', 
             icons: ['HTML/CSS', 'Javascript', 'PHP/MySQL'], 
             info: "UDM Clinic System is built to track the patient's medical records.", 
-            fscreenImg: require('./images/fsClinic.png')
+            fscreenImg: require('./images/fsClinic.png'),
+            link: "https://udmanagement.000webhostapp.com/"
         },
         {   
             img: require('./images/bms.png'), 
             title: 'Barangay Management', 
-            icons: ["MERN Stack"], 
+            icons: ["NextJS", "MongoDB"], 
             info: "Barangay Management System is built for the barangay 107 residence and councils.", 
-            fscreenImg:require('./images/fsBms.png' )
+            fscreenImg:require('./images/fsBms.png' ),
+            link: "https://bms-sage.vercel.app/"
         }
       ],
 
