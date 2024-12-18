@@ -58,18 +58,11 @@ export const data = {
     //portfolio
       images: [
         {   
-            img: require('./images/zentry.png'), 
+            img: require('./images/zentrySS.png'), 
             title: 'Zentry', 
-            icons: ["ReactJS"], 
+            icons: ["ReactJS, TailwindCSS, GSAP"], 
             info: "Zentry unites every player from countless games and platforms.", 
             fscreenImg: require('./images/zentry.png' ) 
-        },
-        {   
-            img: require('./images/tc.png'), 
-            title: 'Thruimp Co. Shop', 
-            icons: ["MERN Stack"], 
-            info: "Truimp is your go-to thrift shop where you can find a wide range of thrifted products at unbeatable prices.", 
-            fscreenImg: require('./images/fsTc.png' ) 
         },
         {   
             img: require('./images/shopzone.jpg'), 
@@ -84,6 +77,13 @@ export const data = {
             icons: ['Unity', 'C Sharp', '3D Blender', 'Firebase'], 
             info: "UDMAPS is an AR Navigation system exclusively only for UDM vicinity.", 
             fscreenImg: require('./images/UDMAPS.jpg')
+        },
+        {   
+            img: require('./images/tc.png'), 
+            title: 'Thruimp Co. Shop', 
+            icons: ["MERN Stack"], 
+            info: "Truimp is your go-to thrift shop where you can find a wide range of thrifted products at unbeatable prices.", 
+            fscreenImg: require('./images/fsTc.png' ) 
         },
         {   
             img: require('./images/clinic.png'), 
