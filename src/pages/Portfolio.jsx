@@ -29,7 +29,6 @@ function Portfolio() {
   const closeModal = () => {
     setSelectedImage(null);
   };
-  const myC
   return (
     <>
       <div ref={ref} className='project-container'>
