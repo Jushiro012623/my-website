@@ -9,9 +9,13 @@ import { IoCloseOutline } from "react-icons/io5";
 function Portfolio() {
   
   const [selectedImage, setSelectedImage] = useState(null);
+  const [myStyle, setMyStyle] = useState({
+      opacity:0
+    });
   const ref = useRef(null); // for wrapper
   const isInView = useInView(ref, { once: true });
   const mainAnimation = useAnimation();
+  const previewLinkRef = useRef(null);
 
   // if the section is in view do the animation
   useEffect(() => {
@@ -20,6 +24,16 @@ function Portfolio() {
     }
   }, [isInView]);
 
+  const handleMouseMove = (e) => {
+    setMyStyle({
+      opacity:1
+    })
+  }
+  const handleMouseLeave = (e) => {
+    setMyStyle({
+      opacity:0
+    })
+  }
   // Function to handle click on a project-info
   const handleProjectInfoClick = (index) => {
     setSelectedImage(data.images[index].fscreenImg);
@@ -40,6 +54,8 @@ function Portfolio() {
               hidden: index === 2 ? { x: 100, opacity: 0 } : { y: 100, opacity: 0 },
               visible: index === 2 ? { x: 0, opacity: 1 } : { y: 0, opacity: 1 },
             }}
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
             initial='hidden'
             animate={isInView ? 'visible' : 'hidden'}
             transition={{ duration: 1, delay: 0.50 * index }}
@@ -49,7 +65,7 @@ function Portfolio() {
               <h5>{image.info}</h5>
             </div>
             <Icons icons={image.icons} iconsContainer='project-tools'/>
-            <a href={image.link} target="_blank" id="project-preview-link">View Project</a>
+            <a href={image.link} target="_blank" id="project-preview-link" style={myStyle}>View Project</a>
             <div className='project-image' 
             onClick={() => handleProjectInfoClick(index)}>
               <img src={image.img} alt="" />
