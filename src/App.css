@@ -377,7 +377,7 @@
 #project-preview-link{
   position: absolute;
   top: 5%;
-  right: .5%;
+  right: .5em;
   color: var(--clr-fmain);
   text-decoration: none;
   background-color: var(--clr-bg-light);
