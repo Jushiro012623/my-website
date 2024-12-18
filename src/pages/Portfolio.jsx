@@ -49,7 +49,7 @@ function Portfolio() {
               <h5>{image.info}</h5>
             </div>
             <Icons icons={image.icons} iconsContainer='project-tools'/>
-            <a href={image.link} target="_blank" id="project-preview-link">View</a>
+            <a href={image.link} target="_blank" id="project-preview-link">View Project</a>
             <div className='project-image' 
             onClick={() => handleProjectInfoClick(index)}>
               <img src={image.img} alt="" />
