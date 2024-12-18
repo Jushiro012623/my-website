@@ -374,6 +374,15 @@
   align-items: center;
   background-color: var(--clr-bg-light);
 }
+.project-link{
+  position: absolute;
+  top: 5%;
+  right: .5%;
+  color: var(--clr-fmain);
+  border-radius: 50px;
+  font-size: 12px;
+  padding: .8em 1.2em;
+}
 .project-container .project-info:hover .project-tools li{ /* port box hover tools*/
   color: var(--clr-bg-light);
   transition: background-color .4s ease-in-out, color .4s ease-in-out, box-shadow .4s ease-in-out;
