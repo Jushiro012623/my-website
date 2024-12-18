@@ -58,6 +58,13 @@ export const data = {
     //portfolio
       images: [
         {   
+            img: require('./images/zentry.png'), 
+            title: 'Zentry', 
+            icons: ["ReactJS"], 
+            info: "Zentry unites every player from countless games and platforms.", 
+            fscreenImg: require('./images/zentry.png' ) 
+        },
+        {   
             img: require('./images/tc.png'), 
             title: 'Thruimp Co. Shop', 
             icons: ["MERN Stack"], 
