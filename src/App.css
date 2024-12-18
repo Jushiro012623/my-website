@@ -379,6 +379,8 @@
   top: 5%;
   right: .5%;
   color: var(--clr-fmain);
+  text-decoration: none;
+  background-color: var(--clr-bg-light);
   border-radius: 50px;
   font-size: 12px;
   padding: .8em 1.2em;
