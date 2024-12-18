@@ -2,10 +2,8 @@ import React, { useEffect, useRef, useState } from 'react';
 
 // framer motion
 import { motion, useAnimation, useInView } from 'framer-motion';
-
 // components
 import Icons from '../components/Icons';
-
 import {data} from '../Datas'
 import { IoCloseOutline } from "react-icons/io5";
 function Portfolio() {
@@ -31,7 +29,7 @@ function Portfolio() {
   const closeModal = () => {
     setSelectedImage(null);
   };
-
+  const myC
   return (
     <>
       <div ref={ref} className='project-container'>
@@ -46,14 +44,15 @@ function Portfolio() {
             initial='hidden'
             animate={isInView ? 'visible' : 'hidden'}
             transition={{ duration: 1, delay: 0.50 * index }}
-            onClick={() => handleProjectInfoClick(index)}
           >
             <div className='project-text'>
               <h2>{image.title}</h2>
               <h5>{image.info}</h5>
             </div>
-            <Icons icons={image.icons} iconsContainer='project-tools' />
-            <div className='project-image'>
+            <Icons icons={image.icons} iconsContainer='project-tools'/>
+            <a href={image.link} target="_blank" className="project-link">View</a>
+            <div className='project-image' 
+            onClick={() => handleProjectInfoClick(index)}>
               <img src={image.img} alt="" />
             </div>
           </motion.div>
