@@ -14,23 +14,23 @@ export const data = {
 
     // education
     educationData:[
-          {   year: "2024", 
+          {   year: "2024 - Present", 
               title: "Backend Developer", 
               location: "Pisopay.com Inc" 
           },
           {   year: "2023", 
-              title: "IT Specialist", 
+              title: "Frontend Developer", 
               location: "Department of Education - Manila" 
           },
-          {   year: "2019", 
+          {   year: "2019 - 2023", 
               title: "Bachelor of Science in Information Technology", 
               location: "Universidad De Manila" 
           },
           {   year: "2018", 
-              title: "Computer System Servicing", 
+              title: "Computer System Servicing NC II", 
               location: "Tesda Quezon City" 
           },
-          {   year: "2017", 
+          {   year: "2017 - 2019", 
               title: "Information & Communication Technology", 
               location: "Timoteo Paez Integrated School" 
           }
@@ -100,7 +100,7 @@ export const data = {
         {   
             img: require('./images/bms.png'), 
             title: 'Barangay Management', 
-            icons: ["NextJS", "MongoDB"], 
+            icons: ["Mantine", "NextJS", "MongoDB"], 
             info: "Barangay Management System is built for the barangay 107 residence and councils.", 
             fscreenImg:require('./images/fsBms.png' ),
             link: "https://bms-sage.vercel.app/"
